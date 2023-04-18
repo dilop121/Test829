@@ -1,10 +1,11 @@
+#Pyrogrammers
 from imaplib import IMAP4_SSL
 from telethon import TelegramClient, events
 
 # Replace the values below with your own API ID, API Hash and session file name
-api_id = YOUR_API_ID
-api_hash = 'YOUR_API_HASH'
-session_name = 'my_session'
+API_ID = YOUR_API_ID
+API_HASH = 'YOUR_API_HASH'
+BOT_TOKEN = 'BOT_TOKEN'
 
 # Replace the values below with your email account credentials and IMAP server details
 email_address = 'youremail@example.com'
@@ -12,7 +13,7 @@ password = 'yourpassword'
 imap_server = 'imap.example.com'
 
 # Create a new Telegram client
-client = TelegramClient(session_name, api_id, api_hash)
+client = TelegramClient('client', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
 
 # Define the event handler for incoming messages
 @client.on(events.NewMessage)
