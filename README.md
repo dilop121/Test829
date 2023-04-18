@@ -54,4 +54,3 @@ python3 Home.py
 ## Credits
 
 - [pyrogrammers](https://github.com/pyrogramers)
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
